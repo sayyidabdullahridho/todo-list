@@ -1,0 +1,167 @@
+/* Style Umum */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  max-width: 100%; /* Agar lebar container sesuai layar kecil */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+#todo-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#new-task {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 4px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+#filter-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#filter-buttons button {
+  padding: 5px;
+  background-color: #007bff;
+  margin: 5px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#filter-buttons button:hover {
+  background-color: #218838;
+}
+
+/* Style untuk daftar to-do */
+ul {
+  list-style-type: none; /* Hilangkan bullet point */
+  padding: 0;
+}
+
+/* Style untuk setiap tugas */
+li {
+  display: flex;
+  justify-content: space-between; /* Memastikan tombol hapus ada di kanan */
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Style untuk tombol hapus */
+button.delete-btn {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+/* Media Query untuk tampilan mobile */
+/* @media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  #new-task {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  #filter-buttons button {
+    padding: 10px;
+    font-size: 0.5rem;
+  }
+
+  .todo-item {
+    padding: 8px;
+  } 
+} */
